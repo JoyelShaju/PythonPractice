@@ -1,0 +1,21 @@
+num = 3221 
+ 
+# Changed number variable to str,  
+# calculate length (number of digits) 
+order = len(str(num)) 
+ 
+# set up sum 
+sum = 0 
+ 
+# find sum of the cube for each number provided 
+temp = num 
+while temp > 0: 
+   digit = temp % 10 
+   sum += digit ** order 
+   temp //= 10 
+ 
+# display the result 
+if num == sum: 
+   print(num,"Yes, the number provided is an Armstrong number") 
+else: 
+   print(num,"No, the number provided isnt an Armstrong number") 
