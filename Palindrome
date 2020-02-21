@@ -1,0 +1,11 @@
+def checkPalin(arrayList):    
+    arrBackward = arrayList[::-1]     
+    if arrBackward == arrayList:        
+       print("The numbers that you inputted is a palindrome")  
+    else:    
+        print("The numbers that you inputted is not a palindrome") 
+         
+arrayInput=input(str("Enter array(use commas and no spaces): ")) 
+arrayList = arrayInput.split(",") 
+print(arrayList) 
+palindrome = checkPalin(arrayList)
